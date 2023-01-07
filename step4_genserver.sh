@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 echo "This creates the JSON version of the server CSR"
+read -p "Certificate Authority for this request:" CA
 read -p "Enter Common Name (example.com):" CN
 read -p "Two Letter Country:" C
 read -p "Two Letter State:" ST
@@ -30,5 +31,5 @@ JSON_STRING='
 }
 '
 
-echo $JSON_STRING > "csr/${FNAME}-csr.json"
+echo $JSON_STRING > "clients/${FNAME}-csr.json"
 cfssl gencert -ca="intermediate/${CA}_sig.pem" -ca-key="intermediate/${CA}-key.pem" -config="intermediate/${CA}-config.json" -profile=server "clients/${FNAME}-csr.json" | cfssljson -bare "clients/${FNAME}"
