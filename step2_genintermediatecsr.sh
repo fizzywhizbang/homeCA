@@ -47,7 +47,36 @@ JSON_STRING='
         "ca_constraint": {
           "is_ca": true,
           "max_path_len": 1
-        }
+        },
+            "server": {
+                "usages": [
+                      "signing",
+                      "digital signing",
+                      "key encipherment",
+                      "server auth"
+                    ],
+                "expiry": "8760h"
+            },
+            "client": {
+                "usages": [
+                      "signing",
+                      "digital signature",
+                      "key encipherment",
+                      "key agreement",
+                      "client auth"
+                    ],
+                "expiry": "8760h"
+            },
+            "peer": {
+                "usages": [
+                    "signing",
+                    "digital signature",
+                    "key encipherment",
+                    "client auth",
+                    "server auth"
+                ],
+                "expiry": "8760h"
+            }
       }
     }
   }
