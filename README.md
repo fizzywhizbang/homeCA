@@ -13,7 +13,6 @@ If you like you can run the menu (./menu.sh) which may help getting started *or 
 Run Step 1 to create your root ca *(this will create a directory named root)*  
 Run Step 2 to generate CSR for your intermediate CA *(this will create a directory named intermediate and create your intermediate config file)*  
 *note: these scripts allow for multiple intermediates*  
-
 Run Step 3 to sign the certificates for the intermediate CA *(these will be saved with _sig in the name)*  
 Run either Step 4 file to create a client or a server certificate *(this will create a directory named clients)*  
   
