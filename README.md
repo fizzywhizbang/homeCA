@@ -9,6 +9,7 @@ MacOS or Linux system with Bash
 
 ## Instructions
 each of these steps will ask for all the necessary input to complete its task  
+If you like you can run the menu (./menu.sh) which may help getting started *or not*  
 Run Step 1 to create your root ca *(this will create a directory named root)*  
 Run Step 2 to generate CSR for your intermediate CA *(this will create a directory named intermediate and create your intermediate config file)*  
 *note: these scripts allow for multiple intermediates*  
