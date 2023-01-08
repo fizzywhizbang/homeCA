@@ -3,6 +3,9 @@ To keep it simple I created some bash scripts to quickly and easily setup a root
 These scripts will ask questions and build the json files for you executing the necessary CFSSL  
 commands to generate your Certificate Authority.
 
+###
+Please take the time to let me know how I can make the more simple  
+
 ## Requirements
 Install CFSSL https://github.com/cloudflare/cfssl  
 MacOS or Linux system with Bash
